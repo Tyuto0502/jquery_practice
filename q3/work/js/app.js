@@ -1,0 +1,11 @@
+$(function(){
+  //メニューボタンをクリックした時にナビコンテンツ表示
+  $(".drawer_button").on("click",function(){
+    //メニューボタンにクラス名「active」を追加、「active」が既にある場合は削除
+    $(".drawer_button").toggleClass("active");
+    //ナビコンテンツ表示時の背景のフェードイン・アウトの指定
+    $(".drawer_bg").fadeToggle();
+    //ナビ要素にクラス名「open」を追加、「open」が既にある場合は削除
+    $("nav").toggleClass("open");
+  });
+});
